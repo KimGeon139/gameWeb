@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section-nav {
@@ -19,6 +24,10 @@ nav {
     align-items: center;
     font-size: 24px;
     height: 80px;
+     font-size: clamp(16px, 2vw, 24px);
+    
+    
+    
 }
 
 .nav-1,
@@ -27,6 +36,7 @@ nav {
     // gap: 52px;
     height: 100%;
     align-items: center;
+
 }
 
 .intro-text {
@@ -37,6 +47,7 @@ nav {
     font-family: Galmuri9;
     color: #493805;
     text-decoration: none;
+     font-size: inherit;
 }
 
 .intro-text-1:hover {
@@ -44,4 +55,8 @@ nav {
     -webkit-text-stroke: 1px #cf8f05; 
     background-color:#F1D173 ; 
     box-shadow: inset 5px 5px 0px #DDAB17; 
+}
+
+.logo {
+    padding-left: 0px;
 }
