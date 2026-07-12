@@ -31,17 +31,20 @@ nav {
   display: flex;
   height: 100%;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .intro-text {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-inline: 28px;
+  padding-inline: clamp(8px, 2vw, 28px);
   font-family: Galmuri9;
   color: #493805;
   text-decoration: none;
   font-size: inherit;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .intro-text-1:hover {
@@ -53,4 +56,13 @@ nav {
 
 .logo {
   padding-left: 0px;
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding-inline: 12px;
+  }
+  .intro-text {
+    padding-inline: 8px;
+  }
 }/*# sourceMappingURL=nav.css.map */
