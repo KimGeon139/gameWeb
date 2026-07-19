@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 * {
     box-sizing: border-box;
 }
@@ -71,3 +72,38 @@ nav {
         padding-inline: 8px;
     }
 }
+
+.main {
+    background-image: url('../assets/backgroundimg.jpg');
+    width: 100%;
+    min-height: 100vh;      
+    margin: 0 auto;        /* 가운데 정렬 */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    color: #1F2E64;
+    font-family: Galmuri9;
+     user-select: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+    &-1 {
+       padding-top: clamp(5rem, 17.8vw, 16rem);
+        // font-size: 80px;
+        font-size: clamp(41px, 4.1vw, 80px);
+        font-weight: 500;
+    }
+    &-2 {
+        // font-size: 118px;
+        font-size: clamp(60px, 6vw, 118px);
+        font-weight: 700;
+        // padding-top: 12px;
+    }
+
+}
+
